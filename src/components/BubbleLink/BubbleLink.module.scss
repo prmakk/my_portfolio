@@ -1,0 +1,55 @@
+@import '../../styles/variables.scss';
+
+.bubble{
+    background-color: lighten($secondaryColor, 30%);
+    position: absolute;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .15s all ease-in;
+    border: 5px solid $secondaryColor;
+    animation: bubble 1s infinite;
+
+    a{
+        img{
+            width: 50px;
+        }
+    }
+
+    &:hover{
+        padding: 13px;
+        border: 8px solid $secondaryColor;
+        animation: bubbleHovered 1s infinite;
+    }
+}
+
+@keyframes bubble{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.03;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@keyframes bubbleHovered{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .bubble{
+        display: none;
+    }
+}
+
+

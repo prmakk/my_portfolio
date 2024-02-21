@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    img{
+        max-width: 120px;
+        min-height: 120px;
+    }
+
+    p{
+        color: $secondaryColor;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: $mainFont;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skill{
+
+        img{
+            max-width: 80px;
+            min-height: 80px;
+        }
+
+        p{
+            font-size: 16px;
+        }
+    }
+}

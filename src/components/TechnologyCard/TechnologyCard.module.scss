@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.tech{
+    padding: 10px 20px;
+    background-color: $mainBgColor;
+    color: $secondaryColor;
+    font-family: $mainFont;
+    border-radius: 20px;
+    font-weight: 300;
+    font-size: 14px;
+}

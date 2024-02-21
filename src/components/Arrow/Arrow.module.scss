@@ -1,0 +1,47 @@
+.arrow{
+    position: absolute;
+    top: 110%;
+    left: 90%;
+    z-index: -1;
+
+    svg{
+        transform: rotate(180deg);
+        display: flex;
+    }
+
+    p{
+        content: 'Open me!';
+        color: #fff;
+        font-family: "Kurale", serif;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .arrow{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .arrow{
+        left: 88%;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .arrow{
+        left: 85%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .arrow{
+        left: 77%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .arrow{
+        left: 65%;
+    }
+}

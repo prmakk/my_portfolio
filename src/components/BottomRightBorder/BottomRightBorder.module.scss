@@ -1,0 +1,60 @@
+@import '../../styles/variables.scss';
+
+.bottomright_border{
+    
+
+    .rightborder{
+        z-index: -1;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 5px;
+        width: 20%;
+        background-color: $secondaryColor;
+        border-radius: 20px;
+        animation: bottom_anim 3.5s infinite;
+    }
+
+    .bottomborder{
+        z-index: -1;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 15%;
+        width: 5px;
+        background-color: $secondaryColor;
+        border-radius: 20px;
+        animation: right_anim 3.5s infinite;
+    }
+}
+
+@keyframes bottom_anim {
+    0%{
+        width: 20%;
+    }
+    50%{
+        width: 1%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+@keyframes right_anim {
+    0%{
+        height: 15%;
+    }
+    50%{
+        height: 1%;
+    }
+    100%{
+        height: 15%;
+    }
+}
+
+
+@media screen and (max-width: 510px) {
+    .bottomright_border{
+        display: none;
+    }
+}
