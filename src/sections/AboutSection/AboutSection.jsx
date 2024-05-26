@@ -41,7 +41,7 @@ const AboutSection = () => {
                         </p>
                         <p style={{ marginLeft: "25px" }}>
                             <span className={styles.key}>"age"</span>:{" "}
-                            <span className={styles.value}>21</span>,
+                            <span className={styles.value}>22</span>,
                         </p>
                         <p style={{ marginLeft: "25px" }}>
                             <span className={styles.key}>"hobbies"</span>:{" "}
